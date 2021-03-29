@@ -1,0 +1,36 @@
+body {
+    background-color:black;
+}
+.wrapper {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.container {
+    background-image: url(img/bg.jpg);
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.hole {
+    background-image: url(img/1.png);
+    background-position:center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.show {
+    animation-name: anim;
+    animation-duration: 0.7s;
+}
+
+@keyframes anim{
+    20% {background-image: url(img/2.png);}
+    40% {background-image: url(img/3.png);}
+    60% {background-image: url(img/4.png);}
+    80% {background-image: url(img/5.png);}
+    100% {background-image: url(img/2.png);}
+}
